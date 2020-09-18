@@ -31,9 +31,8 @@ def consolidate_cart(cart)
       new_cart << new_cart_item
       end
     binding.pry
-    
     end
-new_cart
+  new_cart
 end
 
 
