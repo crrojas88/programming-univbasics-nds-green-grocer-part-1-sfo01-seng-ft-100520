@@ -16,7 +16,6 @@ end
 
 
 def consolidate_cart(cart)
-  test_var = 0
   new_cart = []
   cart.each do |items|
     new_cart_item = find_item_by_name_in_collection(cart[items][:item], new_cart)
@@ -30,9 +29,7 @@ def consolidate_cart(cart)
         :count => 1
       }
       new_cart << new_cart_item
-      binding.pry
       end
-      test_var
     end
   new_cart
 end
