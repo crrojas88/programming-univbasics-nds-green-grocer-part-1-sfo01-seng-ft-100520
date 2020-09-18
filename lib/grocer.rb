@@ -28,9 +28,9 @@ def consolidate_cart(cart)
         :clearance => cart[items][:clearance],
         :count => 1
       }
+      binding.pry
       new_cart << new_cart_item
       end
-    binding.pry
     end
   new_cart
 end
